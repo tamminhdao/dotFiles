@@ -15,8 +15,10 @@ source ~/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
-# '\W' adds the name of the current directory
-export PS1="$purple\u$cyan\$(__git_ps1)$green \W $ $reset"
+# '\w' adds the full path of the current directory
+# '\n\ adds a new line
+
+export PS1="$purple\u$cyan\$(__git_ps1)$green \w\n$ $reset"
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
